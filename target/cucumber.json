@@ -1,0 +1,323 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-02-21T17:59:32.507Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1026600,
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.translantik.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 22,
+        "name": "",
+        "description": "",
+        "id": "login-function-with-cucumber-(sezai);;;2",
+        "after": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.translantik.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 999400,
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "The user is on the login page",
+            "match": {
+              "location": "com.translantik.step_definitions.LoginStepDef.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 998900,
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "The user login as a \"driver\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"driver\"",
+                  "offset": 20
+                }
+              ],
+              "location": "com.translantik.step_definitions.LoginStepDef.the_user_login_as_a(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 17,
+            "name": "The \"Quick Launchpad\" should be opened",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Quick Launchpad\"",
+                  "offset": 4
+                }
+              ],
+              "location": "com.translantik.step_definitions.LoginStepDef.the_should_be_opened(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 18,
+            "name": "Copy the URL and logout and paste URL again",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 19,
+            "name": "Validate the system shopukdn\u0027t allow to the user to login",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@AC2"
+          },
+          {
+            "name": "@TRANS-1112"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-02-21T17:59:32.573Z",
+        "before": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.translantik.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 23,
+        "name": "",
+        "description": "",
+        "id": "login-function-with-cucumber-(sezai);;;3",
+        "after": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.translantik.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "The user is on the login page",
+            "match": {
+              "location": "com.translantik.step_definitions.LoginStepDef.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "The user login as a \"store manager\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"store manager\"",
+                  "offset": 20
+                }
+              ],
+              "location": "com.translantik.step_definitions.LoginStepDef.the_user_login_as_a(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 17,
+            "name": "The \"Dashboard\" should be opened",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Dashboard\"",
+                  "offset": 4
+                }
+              ],
+              "location": "com.translantik.step_definitions.LoginStepDef.the_should_be_opened(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 18,
+            "name": "Copy the URL and logout and paste URL again",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 19,
+            "name": "Validate the system shopukdn\u0027t allow to the user to login",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@AC2"
+          },
+          {
+            "name": "@TRANS-1112"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-02-21T17:59:32.580Z",
+        "before": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.translantik.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 24,
+        "name": "",
+        "description": "",
+        "id": "login-function-with-cucumber-(sezai);;;4",
+        "after": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.translantik.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 999700,
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "The user is on the login page",
+            "match": {
+              "location": "com.translantik.step_definitions.LoginStepDef.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "The user login as a \"sales manager\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"sales manager\"",
+                  "offset": 20
+                }
+              ],
+              "location": "com.translantik.step_definitions.LoginStepDef.the_user_login_as_a(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 17,
+            "name": "The \"Dashboard\" should be opened",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Dashboard\"",
+                  "offset": 4
+                }
+              ],
+              "location": "com.translantik.step_definitions.LoginStepDef.the_should_be_opened(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 18,
+            "name": "Copy the URL and logout and paste URL again",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 19,
+            "name": "Validate the system shopukdn\u0027t allow to the user to login",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@AC2"
+          },
+          {
+            "name": "@TRANS-1112"
+          }
+        ]
+      }
+    ],
+    "name": "Login Function with Cucumber (Sezai)",
+    "description": "",
+    "id": "login-function-with-cucumber-(sezai)",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/Login.feature",
+    "tags": []
+  }
+]
