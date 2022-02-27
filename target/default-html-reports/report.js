@@ -1,19 +1,16 @@
 $(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/Login.feature");
 formatter.feature({
   "name": "Login Function with Cucumber (Sezai)",
-  "description": "",
+  "description": "back",
   "keyword": "Feature"
 });
 formatter.scenarioOutline({
-  "name": "",
+  "name": "AC4 Validate whether the leading and trailing spaces entered into the Username field are trimmed",
   "description": "",
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "name": "@AC2"
-    },
-    {
-      "name": "@TRANS-1112"
+      "name": "@AC4"
     }
   ]
 });
@@ -22,20 +19,12 @@ formatter.step({
   "keyword": "Given "
 });
 formatter.step({
-  "name": "The user login as a \"\u003cusertype\u003e\"",
-  "keyword": "When "
+  "name": "login with \"    \u003cusertype\u003e     \" credentials",
+  "keyword": "Then "
 });
 formatter.step({
   "name": "The \"\u003cpage\u003e\" should be opened",
-  "keyword": "Then "
-});
-formatter.step({
-  "name": "Copy the URL and logout and paste URL again",
   "keyword": "And "
-});
-formatter.step({
-  "name": "Validate the system shopukdn\u0027t allow to the user to login",
-  "keyword": "Then "
 });
 formatter.examples({
   "name": "",
@@ -50,34 +39,31 @@ formatter.examples({
     },
     {
       "cells": [
-        "driver",
+        "user1",
         "Quick Launchpad"
       ]
     },
     {
       "cells": [
-        "store manager",
+        "salesmanager105",
         "Dashboard"
       ]
     },
     {
       "cells": [
-        "sales manager",
+        "storemanager75",
         "Dashboard"
       ]
     }
   ]
 });
 formatter.scenario({
-  "name": "",
+  "name": "AC4 Validate whether the leading and trailing spaces entered into the Username field are trimmed",
   "description": "",
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "name": "@AC2"
-    },
-    {
-      "name": "@TRANS-1112"
+      "name": "@AC4"
     }
   ]
 });
@@ -95,18 +81,16 @@ formatter.result({
   "status": "skipped"
 });
 formatter.step({
-  "name": "The user login as a \"driver\"",
-  "keyword": "When "
+  "name": "login with \"    user1     \" credentials",
+  "keyword": "Then "
 });
-formatter.match({
-  "location": "com.translantik.step_definitions.LoginStepDef.the_user_login_as_a(java.lang.String)"
-});
+formatter.match({});
 formatter.result({
-  "status": "skipped"
+  "status": "undefined"
 });
 formatter.step({
   "name": "The \"Quick Launchpad\" should be opened",
-  "keyword": "Then "
+  "keyword": "And "
 });
 formatter.match({
   "location": "com.translantik.step_definitions.LoginStepDef.the_should_be_opened(java.lang.String)"
@@ -114,35 +98,16 @@ formatter.match({
 formatter.result({
   "status": "skipped"
 });
-formatter.step({
-  "name": "Copy the URL and logout and paste URL again",
-  "keyword": "And "
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.step({
-  "name": "Validate the system shopukdn\u0027t allow to the user to login",
-  "keyword": "Then "
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
 formatter.after({
   "status": "skipped"
 });
 formatter.scenario({
-  "name": "",
+  "name": "AC4 Validate whether the leading and trailing spaces entered into the Username field are trimmed",
   "description": "",
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "name": "@AC2"
-    },
-    {
-      "name": "@TRANS-1112"
+      "name": "@AC4"
     }
   ]
 });
@@ -160,18 +125,16 @@ formatter.result({
   "status": "skipped"
 });
 formatter.step({
-  "name": "The user login as a \"store manager\"",
-  "keyword": "When "
+  "name": "login with \"    salesmanager105     \" credentials",
+  "keyword": "Then "
 });
-formatter.match({
-  "location": "com.translantik.step_definitions.LoginStepDef.the_user_login_as_a(java.lang.String)"
-});
+formatter.match({});
 formatter.result({
-  "status": "skipped"
+  "status": "undefined"
 });
 formatter.step({
   "name": "The \"Dashboard\" should be opened",
-  "keyword": "Then "
+  "keyword": "And "
 });
 formatter.match({
   "location": "com.translantik.step_definitions.LoginStepDef.the_should_be_opened(java.lang.String)"
@@ -179,35 +142,16 @@ formatter.match({
 formatter.result({
   "status": "skipped"
 });
-formatter.step({
-  "name": "Copy the URL and logout and paste URL again",
-  "keyword": "And "
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.step({
-  "name": "Validate the system shopukdn\u0027t allow to the user to login",
-  "keyword": "Then "
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
 formatter.after({
   "status": "skipped"
 });
 formatter.scenario({
-  "name": "",
+  "name": "AC4 Validate whether the leading and trailing spaces entered into the Username field are trimmed",
   "description": "",
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "name": "@AC2"
-    },
-    {
-      "name": "@TRANS-1112"
+      "name": "@AC4"
     }
   ]
 });
@@ -225,40 +169,22 @@ formatter.result({
   "status": "skipped"
 });
 formatter.step({
-  "name": "The user login as a \"sales manager\"",
-  "keyword": "When "
+  "name": "login with \"    storemanager75     \" credentials",
+  "keyword": "Then "
 });
-formatter.match({
-  "location": "com.translantik.step_definitions.LoginStepDef.the_user_login_as_a(java.lang.String)"
-});
+formatter.match({});
 formatter.result({
-  "status": "skipped"
+  "status": "undefined"
 });
 formatter.step({
   "name": "The \"Dashboard\" should be opened",
-  "keyword": "Then "
+  "keyword": "And "
 });
 formatter.match({
   "location": "com.translantik.step_definitions.LoginStepDef.the_should_be_opened(java.lang.String)"
 });
 formatter.result({
   "status": "skipped"
-});
-formatter.step({
-  "name": "Copy the URL and logout and paste URL again",
-  "keyword": "And "
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.step({
-  "name": "Validate the system shopukdn\u0027t allow to the user to login",
-  "keyword": "Then "
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
 });
 formatter.after({
   "status": "skipped"

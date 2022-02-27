@@ -17,9 +17,9 @@ public abstract class  BasePage {
     public WebElement pageName;
 
     @FindBy(xpath = "//*[@id='user-menu']/a")
-    public WebElement ownUserName;
+    public WebElement selfName;
 
     @FindBy(linkText = "Logout")
-    public WebElement logoutButton;
+    public WebElement LogoutB;
 
 }

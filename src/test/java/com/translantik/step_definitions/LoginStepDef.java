@@ -1,13 +1,15 @@
 package com.translantik.step_definitions;
 
-import com.translantik.pages.Dashboard;
+import com.translantik.pages.DashboardPage;
 import com.translantik.pages.LoginPage;
+import com.translantik.utilities.BrowserUtils;
 import com.translantik.utilities.ConfigurationReader;
 import com.translantik.utilities.Driver;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
+import org.openqa.selenium.JavascriptExecutor;
 
 public class LoginStepDef {
     @Given("The user is on the login page")
@@ -23,18 +25,22 @@ public class LoginStepDef {
 
     @Then("The {string} should be opened")
     public void the_should_be_opened(String expectedPage) {
-    String actualPage = new Dashboard().pageName.getText();
+
+    String actualPage = new DashboardPage().pageName.getText();
         Assert.assertEquals(actualPage,expectedPage);
     }
-    @Then("Copy the URL and logout and paste URL again")
-    public void copy_the_URL_and_logout_and_paste_URL_again() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+    @Then("copy URl and log out and paste URl")
+    public void copy_URl_and_log_out_and_paste_URl() {
+        String currentUrl = Driver.get().getCurrentUrl();
+        JavascriptExecutor js= (JavascriptExecutor) Driver.get();
+        js.executeScript("arguments[0].click()",new DashboardPage().selfName);
+        js.executeScript("arguments[0].click()",new DashboardPage().LogoutB);
+        Driver.get().navigate().to(currentUrl);
     }
 
-    @Then("Validate the system shopukdn't allow to the user to login")
-    public void validate_the_system_shopukdn_t_allow_to_the_user_to_login() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+    @Then("validate the system shouldnt allow the user to login")
+    public void validate_the_system_shouldnt_allow_the_user_to_login() {
+        Assert.assertEquals("https://qa.translantik.com/user/login",Driver.get().getCurrentUrl());
     }
+
 }
