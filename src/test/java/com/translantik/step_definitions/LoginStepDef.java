@@ -5,6 +5,7 @@ import com.translantik.pages.LoginPage;
 import com.translantik.utilities.BrowserUtils;
 import com.translantik.utilities.ConfigurationReader;
 import com.translantik.utilities.Driver;
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -43,4 +44,64 @@ public class LoginStepDef {
         Assert.assertEquals("https://qa.translantik.com/user/login",Driver.get().getCurrentUrl());
     }
 
+
+   
+
+
+
+
+
+    @When("The user enter valid {string} to Username box")
+    public void theUserEnterValidToUsernameBox(String arg0) {
+        
+    }
+
+    @Then("The user hits the Enter key on the keybord")
+    public void theUserHitsTheEnterKeyOnTheKeybord() {
+        
+    }
+
+    @When("The user enter valid {string} to Password box")
+    public void theUserEnterValidToPasswordBox(String arg0) {
+        
+    }
+
+    @Then("LOG IN button gets clicked")
+    public void logINButtonGetsClicked() {
+        
+    }
+
+    @And("The {string} should be displayed")
+    public void theShouldBeDisplayed(String arg0) {
+        
+    }
+
+    @Then("The user hits the {string} key on the keybord")
+    public void theUserHitsTheKeyOnTheKeybord(String arg0) {
+    }
+
+
+    @When("The Remember me on this computer link should be seen")
+    public void theRememberMeOnThisComputerLinkShouldBeSeen() {
+        Assert.assertTrue( new LoginPage().RememberB.isDisplayed());
+
+    }
+
+
+    @Then("Validate that the Remember me on this computer link should be clickable")
+    public void validateThatTheRememberMeOnThisComputerLinkShouldBeClickable() {
+       Assert.assertTrue(BrowserUtils.waitForClickablility(new LoginPage().RememberB,3)!=null);
+    }
+
+    @When("The user enters {string} in to Password input")
+    public void theUserEntersInToPasswordInput(String asdfg) {
+        new LoginPage().Password.sendKeys(asdfg);
+    }
+
+
+    @Then("The {string} shouldn't be visible in the Page Source")
+    public void theShouldnTBeVisibleInThePageSource(String asdfg) {
+        String pageSource=Driver.get().getPageSource();
+        Assert.assertFalse(pageSource.contains(asdfg));
+    }
 }

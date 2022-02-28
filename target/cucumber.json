@@ -3,25 +3,27 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2022-02-27T20:47:24.184Z",
+        "start_timestamp": "2022-02-28T12:10:05.428Z",
         "before": [
           {
             "result": {
-              "status": "skipped"
+              "duration": 1604653500,
+              "status": "passed"
             },
             "match": {
               "location": "com.translantik.step_definitions.Hooks.setUp()"
             }
           }
         ],
-        "line": 32,
-        "name": "AC4 Validate whether the leading and trailing spaces entered into the Username field are trimmed",
+        "line": 27,
+        "name": "Validate the Password is not visible in the Page Source",
         "description": "",
-        "id": "login-function-with-cucumber-(sezai);ac4-validate-whether-the-leading-and-trailing-spaces-entered-into-the-username-field-are-trimmed;;2",
+        "id": "login-function-with-cucumber-sezai;validate-the-password-is-not-visible-in-the-page-source",
         "after": [
           {
             "result": {
-              "status": "skipped"
+              "duration": 647176100,
+              "status": "passed"
             },
             "match": {
               "location": "com.translantik.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
@@ -29,14 +31,14 @@
           }
         ],
         "type": "scenario",
-        "keyword": "Scenario Outline",
+        "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 996400,
-              "status": "skipped"
+              "duration": 10334511900,
+              "status": "passed"
             },
-            "line": 27,
+            "line": 28,
             "name": "The user is on the login page",
             "match": {
               "location": "com.translantik.step_definitions.LoginStepDef.the_user_is_on_the_login_page()"
@@ -45,191 +47,54 @@
           },
           {
             "result": {
-              "status": "undefined"
-            },
-            "line": 28,
-            "name": "login with \"    user1     \" credentials",
-            "match": {},
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 996600,
-              "status": "skipped"
+              "duration": 105331400,
+              "status": "passed"
             },
             "line": 29,
-            "name": "The \"Quick Launchpad\" should be opened",
+            "name": "The user enters \"dummypassword\" in to Password input",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Quick Launchpad\"",
+                  "val": "\"dummypassword\"",
+                  "offset": 16
+                }
+              ],
+              "location": "com.translantik.step_definitions.LoginStepDef.theUserEntersInToPasswordInput(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 23225200,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "The \"dummypassword\" shouldn\u0027t be visible in the Page Source",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"dummypassword\"",
                   "offset": 4
                 }
               ],
-              "location": "com.translantik.step_definitions.LoginStepDef.the_should_be_opened(java.lang.String)"
+              "location": "com.translantik.step_definitions.LoginStepDef.theShouldnTBeVisibleInThePageSource(java.lang.String)"
             },
-            "keyword": "And "
+            "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@AC4"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2022-02-27T20:47:24.267Z",
-        "before": [
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "match": {
-              "location": "com.translantik.step_definitions.Hooks.setUp()"
-            }
-          }
-        ],
-        "line": 33,
-        "name": "AC4 Validate whether the leading and trailing spaces entered into the Username field are trimmed",
-        "description": "",
-        "id": "login-function-with-cucumber-(sezai);ac4-validate-whether-the-leading-and-trailing-spaces-entered-into-the-username-field-are-trimmed;;3",
-        "after": [
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "match": {
-              "location": "com.translantik.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 27,
-            "name": "The user is on the login page",
-            "match": {
-              "location": "com.translantik.step_definitions.LoginStepDef.the_user_is_on_the_login_page()"
-            },
-            "keyword": "Given "
+            "name": "@AC8"
           },
           {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 28,
-            "name": "login with \"    salesmanager105     \" credentials",
-            "match": {},
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 906900,
-              "status": "skipped"
-            },
-            "line": 29,
-            "name": "The \"Dashboard\" should be opened",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Dashboard\"",
-                  "offset": 4
-                }
-              ],
-              "location": "com.translantik.step_definitions.LoginStepDef.the_should_be_opened(java.lang.String)"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@AC4"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2022-02-27T20:47:24.275Z",
-        "before": [
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "match": {
-              "location": "com.translantik.step_definitions.Hooks.setUp()"
-            }
-          }
-        ],
-        "line": 34,
-        "name": "AC4 Validate whether the leading and trailing spaces entered into the Username field are trimmed",
-        "description": "",
-        "id": "login-function-with-cucumber-(sezai);ac4-validate-whether-the-leading-and-trailing-spaces-entered-into-the-username-field-are-trimmed;;4",
-        "after": [
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "match": {
-              "location": "com.translantik.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 995700,
-              "status": "skipped"
-            },
-            "line": 27,
-            "name": "The user is on the login page",
-            "match": {
-              "location": "com.translantik.step_definitions.LoginStepDef.the_user_is_on_the_login_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 28,
-            "name": "login with \"    storemanager75     \" credentials",
-            "match": {},
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 1010200,
-              "status": "skipped"
-            },
-            "line": 29,
-            "name": "The \"Dashboard\" should be opened",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Dashboard\"",
-                  "offset": 4
-                }
-              ],
-              "location": "com.translantik.step_definitions.LoginStepDef.the_should_be_opened(java.lang.String)"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@AC4"
+            "name": "@TRANS-1190"
           }
         ]
       }
     ],
-    "name": "Login Function with Cucumber (Sezai)",
-    "description": "back",
-    "id": "login-function-with-cucumber-(sezai)",
+    "name": "Login Function with Cucumber Sezai",
+    "description": "",
+    "id": "login-function-with-cucumber-sezai",
     "keyword": "Feature",
     "uri": "file:src/test/resources/features/Login.feature",
     "tags": []

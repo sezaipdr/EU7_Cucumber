@@ -20,6 +20,8 @@ public class LoginPage {
     public WebElement Password;
     @FindBy(id="_submit")
     public WebElement LoginButton;
+    @FindBy (className = "custom-checkbox__text")
+    public WebElement RememberB;
 
     public static void waitUntilLoaderScreenDisappear() {
     }
